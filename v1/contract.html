@@ -308,10 +308,10 @@
             <a href="#4832b46474" class="toc-h1 toc-link" data-title="合约交易">合约交易</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#fd6ce2a756-place" class="toc-h2 toc-link" data-title="下单">下单</a>
+                    <a href="#fd6ce2a756-place" class="toc-h2 toc-link" data-title="开仓下单">开仓下单</a>
                   </li>
                   <li>
-                    <a href="#fd6ce2a756-positions-close" class="toc-h2 toc-link" data-title="平仓">平仓</a>
+                    <a href="#fd6ce2a756-positions-close" class="toc-h2 toc-link" data-title="平仓下单">平仓下单</a>
                   </li>
                   <li>
                     <a href="#fd6ce2a756-positions" class="toc-h2 toc-link" data-title="合约持仓查询">合约持仓查询</a>
@@ -326,13 +326,13 @@
                     <a href="#92d59b6aad" class="toc-h2 toc-link" data-title="查询单个订单详情">查询单个订单详情</a>
                   </li>
                   <li>
-                    <a href="#92d59b6aad-orders" class="toc-h2 toc-link" data-title="查询当前未成交订单（按条件查询）">查询当前未成交订单（按条件查询）</a>
+                    <a href="#92d59b6aad-orders" class="toc-h2 toc-link" data-title="查询当前未成交订单">查询当前未成交订单</a>
                   </li>
                   <li>
-                    <a href="#92d59b6aad-tradeApi-historyOrders" class="toc-h2 toc-link" data-title="查询历史订单（按条件查询）">查询历史订单（按条件查询）</a>
+                    <a href="#92d59b6aad-tradeApi-historyOrders" class="toc-h2 toc-link" data-title="查询历史订单">查询历史订单</a>
                   </li>
                   <li>
-                    <a href="#92d59b6aad-tradeApi-trades" class="toc-h2 toc-link" data-title="查询交易记录（按条件查询）">查询交易记录（按条件查询）</a>
+                    <a href="#92d59b6aad-tradeApi-trades" class="toc-h2 toc-link" data-title="查询交易记录">查询交易记录</a>
                   </li>
               </ul>
           </li>
@@ -1678,8 +1678,8 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 </tbody></table>
 <h1 id="4832b46474">合约交易</h1>
 <aside class="notice">访问合约交易相关的接口需要进行签名认证。</aside>
-<h2 id="fd6ce2a756-place">下单</h2>
-<p>发送一个新订单到BFX以进行撮合。</p>
+<h2 id="fd6ce2a756-place">开仓下单</h2>
+<p>发送一个新开仓订单到BFX以进行撮合。</p>
 <h3 id="http-place">HTTP 请求</h3>
 <ul>
 <li>POST <code>/v1/trade/orders/place.do</code></li>
@@ -1803,8 +1803,8 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <td>订单id</td>
 </tr>
 </tbody></table>
-<h2 id="fd6ce2a756-positions-close">平仓</h2>
-<p>发送一个平仓请求到BFX以进行撮合。</p>
+<h2 id="fd6ce2a756-positions-close">平仓下单</h2>
+<p>发送一个平仓下单请求到BFX以进行撮合。</p>
 <h3 id="http-place">HTTP 请求</h3>
 <ul>
 <li>POST <code>/v1/trade/positions/close.do</code></li>
@@ -2465,7 +2465,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <td>未成交数量</td>
 </tr>
 </tbody></table>
-<h2 id="92d59b6aad-orders">查询当前未成交订单（按条件查询）</h2>
+<h2 id="92d59b6aad-orders">查询当前未成交订单</h2>
 <p>此接口基于搜索条件查询当前未成交订单。</p>
 <h3 id="http-orders">HTTP 请求</h3>
 <ul>
@@ -2672,7 +2672,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <td>未成交数量</td>
 </tr>
 </tbody></table>
-<h2 id="92d59b6aad-tradeApi-historyOrders">查询历史订单（按条件查询）</h2>
+<h2 id="92d59b6aad-tradeApi-historyOrders">查询历史订单</h2>
 <p>此接口基于搜索条件查询历史订单。</p>
 <h3 id="http-tradeApi-historyOrders">HTTP 请求</h3>
 <ul>
@@ -2893,7 +2893,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <td>交易类型，1-多单开仓，2-多单平仓，3-空单开仓，4-空单平仓（合约交易才有，现货为0）</td>
 </tr>
 </tbody></table>
-<h2 id="92d59b6aad-tradeApi-trades">查询交易记录（按条件查询）</h2>
+<h2 id="92d59b6aad-tradeApi-trades">查询交易记录</h2>
 <p>此接口基于搜索条件查询交易记录。</p>
 <h3 id="http-tradeApi-trades">HTTP 请求</h3>
 <ul>
