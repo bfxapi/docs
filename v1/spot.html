@@ -389,10 +389,10 @@
 <td>添加 现货 API 文档</td>
 </tr>
 <tr>
-<td>2019.10.12 16:00</td>
-<td>BFX 合约 API 文档</td>
-<td>新增</td>
-<td>添加 合约 API 文档</td>
+<td>2019.11.01 19:00</td>
+<td>GET /v1/history/orders.do</td>
+<td>修改</td>
+<td>添加“state”返回字段，表示订单状态</td>
 </tr>
 
 </tbody></table>
@@ -2769,6 +2769,11 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <td>tradeType</td>
 <td>integer</td>
 <td>交易类型，1-多单开仓，2-多单平仓，3-空单开仓，4-空单平仓（合约交易才有，现货为0）</td>
+</tr>
+<tr>
+<td>state</td>
+<td>string</td>
+<td>订单状态，submitting提交中，submitted已提交，filled已成交，canceled已撤销</td>
 </tr>
 </tbody></table>
 <h2 id="92d59b6aad-tradeApi-trades">查询交易记录</h2>
