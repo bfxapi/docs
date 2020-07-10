@@ -360,7 +360,7 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href="https://www.bfx.nu/center/bindAppKey.do">创建 API Key </a></li>
+            <li><a href="https://www.bfxnu.com/center/bindAppKey.do">创建 API Key </a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -372,7 +372,7 @@
 <p>在文档的右侧是代码示例，目前我们仅提供针对 <code>shell</code> 的代码示例。</p>
 
 <p>你可以通过下面的链接来切换旧版API文档：</p>
-<p><a href="https://www.bfx.nu/news/other.do">https://www.bfx.nu/news/other.do</a></p>
+<p><a href="https://www.bfxnu.com/news/other.do">https://www.bfxnu.com/news/other.do</a></p>
 <h1 id="185368440e">更新日志</h1>
 <table><thead>
 <tr>
@@ -405,11 +405,11 @@
 <h1 id="2d07d50c97">接入说明</h1><h2 id="urls">接入 URLs</h2>
 <p><strong>正式版 REST API</strong></p>
 
-<p><strong><code>https://api.bfx.nu/</code></strong></p>
+<p><strong><code>https://api.bfxnu.com/</code></strong></p>
 
 <p><strong>Websocket Feed（行情）</strong></p>
 
-<p><strong><code>wss://api.bfx.nu/v1/ws</code></strong></p>
+<p><strong><code>wss://api.bfxnu.com/v1/ws</code></strong></p>
 
 <aside class="notice">
 鉴于延迟高和稳定性差等原因，不建议通过代理的方式访问 BFX API。
@@ -430,7 +430,7 @@
 <p>一个合法的请求由以下几部分组成：</p>
 
 <ul>
-<li><p>方法请求地址：即访问服务器地址 https://api.bfx.nu，比如 https://api.bfx.nu/v1/account/accounts.do。</p></li>
+<li><p>方法请求地址：即访问服务器地址 https://api.bfxnu.com，比如 https://api.bfxnu.com/v1/account/accounts.do。</p></li>
 <li><p>API 访问密钥（AppKey）：您申请的 AppKey 和 AppSecret。</p></li>
 <!--li><p>签名方法（SignatureMethod）：用户计算签名的协议，此处使用 MD5。</p></li-->
 
@@ -443,7 +443,7 @@
 Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 </ul>
 <h3 id="api-key">创建 API Key</h3>
-<p>您可以在 <a href="https://www.bfx.nu/center/bindAppKey.do">这里 https://www.bfx.nu/center/bindAppKey.do</a> 创建 API Key。</p>
+<p>您可以在 <a href="https://www.bfxnu.com/center/bindAppKey.do">这里 https://www.bfxnu.com/center/bindAppKey.do</a> 创建 API Key。</p>
 
 <p>API Key 包括以下两部分</p>
 
@@ -468,7 +468,7 @@ AppKey 具有包括交易、充提币等所有操作权限。
 
 <p>查询某订单详情</p>
 
-<p><code>https://api.bfx.nu/v1/trade/order.do?</code></p>
+<p><code>https://api.bfxnu.com/v1/trade/order.do?</code></p>
 
 <p><code>AppKey=8e9e4b10413f49f682001c530beea232</code></p>
 
@@ -513,7 +513,7 @@ AppKey 具有包括交易、充提币等所有操作权限。
 <h4 id="5">5. 将上述签名值作为参数Signature的取值添加到 API 请求中：</h4>
 <p>最终，发送到服务器的 API 请求应该为</p>
 
-<p><code>https://api.bfx.nu/v1/trade/order.do?AppKey=8e9e4b10413f49f682001c530beea232&amp;Timestamp=1568189479&amp;orderId=1082752&amp;symbol=bfxusdt&amp;Signature=a49c6053d05826f29356b189e1200f2a</code></p>
+<p><code>https://api.bfxnu.com/v1/trade/order.do?AppKey=8e9e4b10413f49f682001c530beea232&amp;Timestamp=1568189479&amp;orderId=1082752&amp;symbol=bfxusdt&amp;Signature=a49c6053d05826f29356b189e1200f2a</code></p>
 
 <ol>
 <li><p>把所有必须的认证参数添加到接口调用的路径参数里</p></li>
@@ -592,7 +592,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/common/symbols.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/common/symbols.do?type=spot"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/common/symbols.do?type=spot"</span>
 </code></pre>
 <h3 id="1f9ac54b15-symbols">请求参数</h3>
 <table><thead>
@@ -679,7 +679,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/common/currencys.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/common/currencys.do"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/common/currencys.do"</span>
 </code></pre>
 <h3 id="1f9ac54b15-currencys">请求参数</h3>
 <p>无</p>
@@ -709,7 +709,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/market/kline.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/market/kline.do?symbol=btcusdt&amp;interval=15min&amp;type=spot"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/market/kline.do?symbol=btcusdt&amp;interval=15min&amp;type=spot"</span>
 </code></pre>
 <h3 id="1f9ac54b15-4">请求参数</h3>
 <table><thead>
@@ -820,7 +820,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/market/ticker.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/market/ticker.do?symbol=btcusdt&amp;type=spot"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/market/ticker.do?symbol=btcusdt&amp;type=spot"</span>
 </code></pre>
 <h3 id="1f9ac54b15-ticker">请求参数</h3>
 <table><thead>
@@ -923,7 +923,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/market/tickers.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/market/tickers.do?type=spot"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/market/tickers.do?type=spot"</span>
 </code></pre>
 <h3 id="1f9ac54b15-tickers">请求参数</h3>
 <table><thead>
@@ -1031,7 +1031,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/market/depth.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/market/depth.do?symbol=btcusdt&amp;type=spot"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/market/depth.do?symbol=btcusdt&amp;type=spot"</span>
 </code></pre><h3 id="1f9ac54b15-7">请求参数</h3>
 <table><thead>
 <tr>
@@ -1130,7 +1130,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/market/trades.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/market/trades.do?symbol=btcusdt&amp;type=spot"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/market/trades.do?symbol=btcusdt&amp;type=spot"</span>
 </code></pre>
 <h3 id="1f9ac54b15-trades">请求参数</h3>
 <table><thead>
@@ -1247,7 +1247,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/account/accounts.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/account/accounts.do?AppKey=b779e1982b77478d8d23e69f7e7df10f&amp;Timestamp=1570601407&amp;type=spot&amp;Signature=4469ee0fef8a34161956c42ce29746d7"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/account/accounts.do?AppKey=b779e1982b77478d8d23e69f7e7df10f&amp;Timestamp=1570601407&amp;type=spot&amp;Signature=4469ee0fef8a34161956c42ce29746d7"</span>
 </code></pre>
 <h3 id="1f9ac54b15-accounts">请求参数</h3>
 <table><thead>
@@ -1344,7 +1344,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/account/account.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/account/account.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1571388790&amp;symbol=btc&amp;type=spot&amp;Signature=bbad4f07325803bcfd44c29f09552442"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/account/account.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1571388790&amp;symbol=btc&amp;type=spot&amp;Signature=bbad4f07325803bcfd44c29f09552442"</span>
 </code></pre>
 <h3 id="1f9ac54b15-account">请求参数</h3>
 <table><thead>
@@ -1541,7 +1541,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/exchange/record.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/exchange/record.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570779234&amp;recordId=4&amp;Signature=7d0429244626cbdf179110e78d30f10e"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/exchange/record.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570779234&amp;recordId=4&amp;Signature=7d0429244626cbdf179110e78d30f10e"</span>
 </code></pre>
 <h3 id="1f9ac54b15-record">请求参数</h3>
 <table><thead>
@@ -1672,7 +1672,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/exchange/records.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/exchange/records.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570783684&amp;direct=next&amp;endTime=1570783588&amp;from=20&amp;originCoinName=btc&amp;size=100&amp;startTime=1557543620&amp;targetCoinName=usdt&amp;Signature=be90eb75537fe8ff8edc5155a3f7eed5"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/exchange/records.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570783684&amp;direct=next&amp;endTime=1570783588&amp;from=20&amp;originCoinName=btc&amp;size=100&amp;startTime=1557543620&amp;targetCoinName=usdt&amp;Signature=be90eb75537fe8ff8edc5155a3f7eed5"</span>
 </code></pre>
 <h3 id="1f9ac54b15-records">请求参数</h3>
 <table><thead>
@@ -2189,7 +2189,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/trade/order.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/trade/order.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570699502&amp;orderId=1570612201371537&amp;symbol=btcusdt&amp;type=spot&amp;Signature=5db1d808593145f45af05c97ce5300ad"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/trade/order.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570699502&amp;orderId=1570612201371537&amp;symbol=btcusdt&amp;type=spot&amp;Signature=5db1d808593145f45af05c97ce5300ad"</span>
 </code></pre>
 <h3 id="1f9ac54b15-order">请求参数</h3>
 <table><thead>
@@ -2354,7 +2354,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/trade/orders.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/trade/orders.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570765354&amp;endTime=1570762820&amp;size=100&amp;startTime=1557543620&amp;states=submitted%2Csubmitting&amp;symbol=btcusdt&amp;type=spot&amp;Signature=0d8a6517077bae18b9c0576571496f3f"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/trade/orders.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570765354&amp;endTime=1570762820&amp;size=100&amp;startTime=1557543620&amp;states=submitted%2Csubmitting&amp;symbol=btcusdt&amp;type=spot&amp;Signature=0d8a6517077bae18b9c0576571496f3f"</span>
 </code></pre>
 <h3 id="1f9ac54b15-orders">请求参数</h3>
 <table><thead>
@@ -2561,7 +2561,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/trade/history/orders.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/trade/history/orders.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1571390736&amp;direct=prev&amp;endTime=1571389895&amp;from=20&amp;size=100&amp;startTime=1557543620&amp;symbol=btcusdt&amp;type=spot&amp;Signature=e7e486f20c36d5070c54f7c262905fd5"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/trade/history/orders.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1571390736&amp;direct=prev&amp;endTime=1571389895&amp;from=20&amp;size=100&amp;startTime=1557543620&amp;symbol=btcusdt&amp;type=spot&amp;Signature=e7e486f20c36d5070c54f7c262905fd5"</span>
 </code></pre>
 <h3 id="1f9ac54b15-tradeApi-historyOrders">请求参数</h3>
 <table><thead>
@@ -2787,7 +2787,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/trade/history/trades.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/trade/history/trades.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570774448&amp;direct=prev&amp;from=20&amp;size=100&amp;symbol=btcusdt&amp;type=spot&amp;Signature=6dc09282a1d9eb8a20c45557e0a27956"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/trade/history/trades.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570774448&amp;direct=prev&amp;from=20&amp;size=100&amp;symbol=btcusdt&amp;type=spot&amp;Signature=6dc09282a1d9eb8a20c45557e0a27956"</span>
 </code></pre>
 <h3 id="1f9ac54b15-tradeApi-trades">请求参数</h3>
 <table><thead>
@@ -3000,7 +3000,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <h3 id="url">接入URL</h3>
 <p><strong>行情请求地址</strong></p>
 
-<p><strong><code>wss://api.bfx.nu/v1/ws</code></strong></p>
+<p><strong><code>wss://api.bfxnu.com/v1/ws</code></strong></p>
 
 <h3 id="1853724646">心跳消息</h3>
 
