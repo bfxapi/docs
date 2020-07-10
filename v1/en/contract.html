@@ -355,7 +355,7 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href="https://www.bfx.nu/center/bindAppKey.do">Sign Up for a BFX API key</a></li>
+            <li><a href="https://www.bfxnu.com/center/bindAppKey.do">Sign Up for a BFX API key</a></li>
             <li>Login is required for creating an API key</li>
         </ul>
     </div>
@@ -368,7 +368,7 @@
 <p>On the right side of the document is the code example, which we currently only provide for the <code>shell</code>.</p>
 
 <p>You can use the following link to switch between old API documents:</p>
-<p><a href="https://www.bfx.nu/news/other.do">https://www.bfx.nu/news/other.do</a></p>
+<p><a href="https://www.bfxnu.com/news/other.do">https://www.bfxnu.com/news/other.do</a></p>
 <h1 id="185368440e">Change Log</h1>
 <table><thead>
 <tr>
@@ -407,11 +407,11 @@
 <h1 id="2d07d50c97">Access Instructions</h1><h2 id="urls">Access URLs</h2>
 <p><strong>REST API</strong></p>
 
-<p><strong><code>https://api.bfx.nu/</code></strong></p>
+<p><strong><code>https://api.bfxnu.com/</code></strong></p>
 
 <p><strong>Websocket Feed (market)</strong></p>
 
-<p><strong><code>wss://api.bfx.nu/v1/ws</code></strong></p>
+<p><strong><code>wss://api.bfxnu.com/v1/ws</code></strong></p>
 
 <aside class="notice">
 It is not recommended to use proxy to access BFX API because it will introduce high latency and low stability.
@@ -431,7 +431,7 @@ The single API key dimension is limited. The market API access does not need to 
 <p>A valid request consists of below parts:</p>
 
 <ul>
-<li><p>API Path: https://api.bfx.nu, for example: https://api.bfx.nu/v1/account/accounts.do.</p></li>
+<li><p>API Path: https://api.bfxnu.com, for example: https://api.bfxnu.com/v1/account/accounts.do.</p></li>
 <li><p>API Access Key: The 'Access Key' in your API Key.</p></li>
 
 <li><p>Timestamp: Second Timestamps, Please make sure that the time stamp and Internet time do not differ too much.</p></li>
@@ -443,7 +443,7 @@ The single API key dimension is limited. The market API access does not need to 
 Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 </ul>
 <h3 id="api-key">Create API Key</h3>
-<p>You can be here <a href="https://www.bfx.nu/center/bindAppKey.do">https://www.bfx.nu/center/bindAppKey.do</a> Create API Key. </p>
+<p>You can be here <a href="https://www.bfxnu.com/center/bindAppKey.do">https://www.bfxnu.com/center/bindAppKey.do</a> Create API Key. </p>
 
 <p>API Key includes the following two parts:</p>
 
@@ -468,7 +468,7 @@ Appkey has all operation rights including transaction and withdrawal currency.
 
 <p>query details of one order</p>
 
-<p><code>https://api.bfx.nu/v1/trade/order.do?</code></p>
+<p><code>https://api.bfxnu.com/v1/trade/order.do?</code></p>
 
 <p><code>AppKey=8e9e4b10413f49f682001c530beea232</code></p>
 
@@ -513,7 +513,7 @@ Timestamp: Second Timestamps. Please make sure that the time stamp and Internet 
 <h4 id="5">5. Add the above signature value to the API request as the value of the parameter signature: </h4>
 <p>Finally, the API request sent to the server should be:</p>
 
-<p><code>https://api.bfx.nu/v1/trade/order.do?AppKey=8e9e4b10413f49f682001c530beea232&amp;Timestamp=1568189479&amp;orderId=1082752&amp;symbol=bfxusdt&amp;Signature=a49c6053d05826f29356b189e1200f2a</code></p>
+<p><code>https://api.bfxnu.com/v1/trade/order.do?AppKey=8e9e4b10413f49f682001c530beea232&amp;Timestamp=1568189479&amp;orderId=1082752&amp;symbol=bfxusdt&amp;Signature=a49c6053d05826f29356b189e1200f2a</code></p>
 
 <ol>
 <li><p>Add all required authentication parameters to the path parameters of the interface call.</p></li>
@@ -592,7 +592,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/common/symbols.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/common/symbols.do?type=contract"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/common/symbols.do?type=contract"</span>
 </code></pre>
 <h3 id="1f9ac54b15-symbols">Request Parameter</h3>
 <table><thead>
@@ -680,7 +680,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/market/kline.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/market/kline.do?symbol=btc&amp;interval=15min&amp;type=contract"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/market/kline.do?symbol=btc&amp;interval=15min&amp;type=contract"</span>
 </code></pre>
 <h3 id="1f9ac54b15-4">Request Parameter</h3>
 <table><thead>
@@ -791,7 +791,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/market/ticker.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/market/ticker.do?symbol=btc&amp;type=contract"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/market/ticker.do?symbol=btc&amp;type=contract"</span>
 </code></pre>
 <h3 id="1f9ac54b15-ticker">Request Parameter</h3>
 <table><thead>
@@ -894,7 +894,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/market/tickers.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/market/tickers.do?type=contract"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/market/tickers.do?type=contract"</span>
 </code></pre>
 <h3 id="1f9ac54b15-tickers">Request Parameter</h3>
 <table><thead>
@@ -1009,7 +1009,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/market/depth.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/market/depth.do?symbol=btc&amp;type=contract"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/market/depth.do?symbol=btc&amp;type=contract"</span>
 </code></pre><h3 id="1f9ac54b15-7">Request Parameter</h3>
 <table><thead>
 <tr>
@@ -1108,7 +1108,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/market/trades.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/market/trades.do?symbol=btcusdt&amp;type=spot"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/market/trades.do?symbol=btcusdt&amp;type=spot"</span>
 </code></pre>
 <h3 id="1f9ac54b15-trades">Request Parameter</h3>
 <table><thead>
@@ -1232,7 +1232,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/account/accounts.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/account/accounts.do?AppKey=b779e1982b77478d8d23e69f7e7df10f&amp;Timestamp=1570601407&amp;type=spot&amp;Signature=4469ee0fef8a34161956c42ce29746d7"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/account/accounts.do?AppKey=b779e1982b77478d8d23e69f7e7df10f&amp;Timestamp=1570601407&amp;type=spot&amp;Signature=4469ee0fef8a34161956c42ce29746d7"</span>
 </code></pre>
 <h3 id="1f9ac54b15-accounts">Request Parameter</h3>
 <table><thead>
@@ -1329,7 +1329,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/account/account.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/account/account.do?AppKey=c5fe0cc7d3434efb817fef0ba63ea614&amp;Timestamp=1571209967&amp;symbol=btc&amp;type=contract&amp;Signature=c7d3dc4bddf8b530c355a930ce41af3e"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/account/account.do?AppKey=c5fe0cc7d3434efb817fef0ba63ea614&amp;Timestamp=1571209967&amp;symbol=btc&amp;type=contract&amp;Signature=c7d3dc4bddf8b530c355a930ce41af3e"</span>
 </code></pre>
 <h3 id="1f9ac54b15-account">Request Parameter</h3>
 <table><thead>
@@ -1533,7 +1533,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/account/transfer/records.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/account/transfer/records.do?AppKey=c5fe0cc7d3434efb817fef0ba63ea614&amp;Timestamp=1571213734&amp;direct=prev&amp;endTime=1571213617&amp;from=20&amp;side=all&amp;size=100&amp;startTime=1557543620&amp;symbol=btc&amp;type=contract&amp;Signature=3645b48620adfe0f5c784f7a1196ec7a"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/account/transfer/records.do?AppKey=c5fe0cc7d3434efb817fef0ba63ea614&amp;Timestamp=1571213734&amp;direct=prev&amp;endTime=1571213617&amp;from=20&amp;side=all&amp;size=100&amp;startTime=1557543620&amp;symbol=btc&amp;type=contract&amp;Signature=3645b48620adfe0f5c784f7a1196ec7a"</span>
 </code></pre>
 <h3 id="1f9ac54b15-records">Request Parameter</h3>
 <table><thead>
@@ -1934,7 +1934,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/trade/positions.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/trade/positions.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570856750&amp;symbol=btc&amp;type=contract&amp;Signature=5b133508bf308424ba9fe4ccff3752f5"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/trade/positions.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570856750&amp;symbol=btc&amp;type=contract&amp;Signature=5b133508bf308424ba9fe4ccff3752f5"</span>
 </code></pre>
 <h3 id="1f9ac54b15-positions">Request Parameter</h3>
 <table><thead>
@@ -2315,7 +2315,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/trade/order.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/order.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570860157&amp;orderId=1570859608609294&amp;symbol=btc&amp;type=contract&amp;Signature=6ff9c32bd3adbb5eef3cea9f5ba2c60a"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/order.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570860157&amp;orderId=1570859608609294&amp;symbol=btc&amp;type=contract&amp;Signature=6ff9c32bd3adbb5eef3cea9f5ba2c60a"</span>
 </code></pre>
 <h3 id="1f9ac54b15-order">Request Parameter</h3>
 <table><thead>
@@ -2480,7 +2480,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/trade/orders.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/trade/orders.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570860897&amp;endTime=1570860882&amp;size=100&amp;startTime=1557543620&amp;states=submitted%2Csubmitting&amp;symbol=btc&amp;type=contract&amp;Signature=afb5d55b8bd35c471fea80bffcb0724b"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/trade/orders.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570860897&amp;endTime=1570860882&amp;size=100&amp;startTime=1557543620&amp;states=submitted%2Csubmitting&amp;symbol=btc&amp;type=contract&amp;Signature=afb5d55b8bd35c471fea80bffcb0724b"</span>
 </code></pre>
 <h3 id="1f9ac54b15-orders">Request Parameter</h3>
 <table><thead>
@@ -2687,7 +2687,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/trade/history/orders.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/trade/history/orders.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1571216140&amp;direct=prev&amp;endTime=1571213617&amp;from=20&amp;size=100&amp;startTime=1557543620&amp;symbol=btc&amp;type=contract&amp;Signature=2908abbe7559379d44273f47e0299c07"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/trade/history/orders.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1571216140&amp;direct=prev&amp;endTime=1571213617&amp;from=20&amp;size=100&amp;startTime=1557543620&amp;symbol=btc&amp;type=contract&amp;Signature=2908abbe7559379d44273f47e0299c07"</span>
 </code></pre>
 <h3 id="1f9ac54b15-tradeApi-historyOrders">Request Parameter</h3>
 <table><thead>
@@ -2913,7 +2913,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <ul>
 <li>GET <code>/v1/trade/history/trades.do</code></li>
 </ul>
-<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfx.nu/v1/trade/history/trades.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570861659&amp;direct=prev&amp;from=20&amp;size=100&amp;symbol=btc&amp;type=contract&amp;Signature=0a87b4d9ee8df333d6a93de95051c4a0"</span>
+<pre class="highlight shell tab-shell" style=""><code>curl <span class="s2">"https://api.bfxnu.com/v1/trade/history/trades.do?AppKey=284e7228ab324e1f82a13faada3cf431&amp;Timestamp=1570861659&amp;direct=prev&amp;from=20&amp;size=100&amp;symbol=btc&amp;type=contract&amp;Signature=0a87b4d9ee8df333d6a93de95051c4a0"</span>
 </code></pre>
 <h3 id="1f9ac54b15-tradeApi-trades">Request Parameter</h3>
 <table><thead>
@@ -3126,7 +3126,7 @@ Gecko) Chrome/50.0.2661.102 UBrowser/6.0.1471.813 Safari/537.36"</p></li>
 <h3 id="url">Websocket URL</h3>
 <p><strong>Websocket Market Feed</strong></p>
 
-<p><strong><code>wss://api.bfx.nu/v1/ws</code></strong></p>
+<p><strong><code>wss://api.bfxnu.com/v1/ws</code></strong></p>
 
 <h3 id="1853724646">Heartbeat and Connection</h3>
 
